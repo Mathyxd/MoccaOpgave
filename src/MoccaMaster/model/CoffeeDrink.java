@@ -9,6 +9,14 @@ Dette er et eksempel på arv (inheritance).
 
 public class CoffeeDrink extends Drink {
 
+    public CoffeeDrink(Type type, Size size) {
+        super(type, size);
+    }
+
+    public void prepare() {
+
+    }
+
     /*
     STUDENT TASK:
 
