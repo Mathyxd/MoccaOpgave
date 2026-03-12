@@ -1,5 +1,7 @@
 package MoccaMaster.file;
 
+import java.io.*;
+
 /*
 FileHandler håndterer CSV filer.
 
@@ -7,6 +9,11 @@ Den læser og skriver data til filer.
 */
 
 public class FileHandler {
+    private String filename;
+
+    public FileHandler(String filename) {
+        this.filename = filename;
+    }
 
     /*
     STUDENT TASK:
