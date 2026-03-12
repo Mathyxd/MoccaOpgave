@@ -1,4 +1,5 @@
 package MoccaMaster.service;
+import MoccaMaster.model.*;
 
 
 /*
@@ -8,7 +9,25 @@ Denne klasse indeholder logikken
 til at oprette de rigtige objekter.
 */
 
+import MoccaMaster.model.DrinkType;
+import MoccaMaster.model.Size;
+
 public class CoffeeMachine {
+
+    public Cup serve(DrinkType type, Size size, boolean whippedCream){
+        Drink drink;
+
+        if (type == DrinkType.CHOCOLATE_DRINK){
+            drink = new ChocolateDrink(type, size, whippedCream);
+
+
+        } else (CoffeeDrink){
+            drink = new CoffeeDrink(type, size, whippedCream);
+        }
+        return new Cup(drink);
+
+
+    }
 
     /*
     STUDENT TASK:
