@@ -22,5 +22,6 @@ public class MoccaMasterApp {
         // STUDENT TASK:
         // Kald start() metoden
 
+
     }
 }
