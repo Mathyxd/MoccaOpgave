@@ -16,12 +16,14 @@ public class MoccaMasterApp {
 
     public static void main(String[] args) {
 
+        CoffeeMachineUI = new CoffeeMachineUI();
+        ui.start();
+
         // STUDENT TASK:
         // Opret CoffeeMachineUI objekt
 
         // STUDENT TASK:
         // Kald start() metoden
-
 
     }
 }

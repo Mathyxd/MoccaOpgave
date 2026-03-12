@@ -1,10 +1,12 @@
 package MoccaMaster.ui;
 
-//import Lesson19.MoccaMaster.*;
-//import Lesson19.MoccaMaster.service.CoffeeMachine;
-//import Lesson19.MoccaMaster.util.CupSorter;
-//import Lesson19.MoccaMaster.file.FileHandler;
+import MoccaMaster.*;
+import MoccaMaster.service.CoffeeMachine;
+import MoccaMaster.util.CupSorter;
+import MoccaMaster.file.FileHandler;
 
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /*
 UI-klassen styrer programmet.
@@ -19,11 +21,16 @@ Den skal kun koordinere andre klasser.
 
 public class CoffeeMachineUI {
 
+
     /*
     STUDENT TASK:
 
     Opret en variabel af typen CoffeeMachine.
     */
+
+
+    private ArrayList<Cup> cups = new ArrayList<>();
+    private Scanner scanner = new Scanner(System.in);
 
     public void start(){
 
