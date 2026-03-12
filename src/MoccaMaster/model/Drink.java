@@ -43,7 +43,7 @@ public void setWhippedCream() {
         this.whippedCream = whippedCream;
 }
 
-public abstract void prepare();
+public abstract String prepare();
 /*
     STUDENT TASK:
 
