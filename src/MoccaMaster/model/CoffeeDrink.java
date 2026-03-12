@@ -8,11 +8,9 @@ Dette er et eksempel på arv (inheritance).
 */
 
 public class CoffeeDrink extends Drink {
-    super.whippedCream = false;
 
     public CoffeeDrink(DrinkType type, Size size, boolean whippedCream) {
-        super(type, size);
-        this.whippedCream = whippedCream;
+        super(type, size, false);
     }
 
     @Override
