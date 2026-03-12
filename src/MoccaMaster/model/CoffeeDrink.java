@@ -9,12 +9,13 @@ Dette er et eksempel på arv (inheritance).
 
 public class CoffeeDrink extends Drink {
 
-    public CoffeeDrink(Type type, Size size) {
+    public CoffeeDrink(DrinkType type, Size size) {
         super(type, size);
     }
 
-    public void prepare() {
-
+    @Override
+    public String prepare() {
+        return "Serveret: " + type + size;
     }
 
     /*

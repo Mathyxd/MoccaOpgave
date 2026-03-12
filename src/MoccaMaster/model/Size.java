@@ -2,7 +2,7 @@ package MoccaMaster.model;
 
 
 public enum Size {
-    SMALL,
-    MEDIUM,
-    LARGE
+    SMALL("(small)"),
+    MEDIUM("(medium)"),
+    LARGE("(large)")
 }

@@ -74,7 +74,7 @@ public abstract void prepare();
     /*
     Abstrakt metode.
 
-    Alle subklasser SKAL implementere denne metode.
+    Alle subklasser SKAL implement  ere denne metode.
     */
 
 }
