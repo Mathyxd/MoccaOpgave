@@ -15,7 +15,7 @@ public class CoffeeDrink extends Drink {
 
     @Override
     public String prepare() {
-        return "Serveret: " + type + " " + size;
+        return "Serveret: " + getType() + " " + getSize();
     }
 
     /*
