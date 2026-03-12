@@ -1,6 +1,9 @@
 package MoccaMaster.file;
 
 import java.io.*;
+import java.util.ArrayList;
+import MoccaMaster.model.Cup.*;
+import MoccaMAster.model.Drink.*;
 
 /*
 FileHandler håndterer CSV filer.
@@ -9,11 +12,27 @@ Den læser og skriver data til filer.
 */
 
 public class FileHandler {
-    private String filename;
+    private static final String FILE_NAME; = "Drikkemaskine.csv";
 
-    public FileHandler(String filename) {
-        this.filename = filename;
+    public ArrayList<Cup> loadCups() {
+
+        ArrayList<Cup> cups = new ArrayList<>();
+
+        try (BufferedReader reader =
+                     new BufferedReader(new FileReader(FILE_NAME))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                boolean whippedCream
+
+            }
+        }
+
     }
+
+
+
+
 
     /*
     STUDENT TASK:
